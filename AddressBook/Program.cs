@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AddressBook
 {
@@ -12,7 +8,8 @@ namespace AddressBook
     
         static List<Person> people = new List<Person>();
         static IPersonRepository repository = new PersonRepository();
-        static IPersonService personService = new PersonService(repository);
+        static  IPersonValidator validator = new PersonValidator();
+        static IPersonService personService = new PersonService(repository,validator);
 
         static void Main(string[] args)
         {

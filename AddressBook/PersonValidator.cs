@@ -1,10 +1,10 @@
 ﻿namespace AddressBook
 {
-    public class PersonValidator
+    public class PersonValidator : IPersonValidator
     {
         public bool Validate(Person person)
         {
-            return person.Equals(!null);
+            return person.Equals(null);
         }
     }
 }

@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/AddressBook/v15
+/AddressBook/bin/Debug
+/AddressBook/obj/Debug
